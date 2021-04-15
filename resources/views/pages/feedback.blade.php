@@ -66,11 +66,27 @@
         }
 
         $('#resetbutton').click( function (){
-            fields = ['nameInput', "emailInput", "commentInput"];
-            for(i = 0; i < 3; i++){
-                $('#'+fields[i]).val('')
-            }
-            changeCounter();
+            Swal.fire({
+                title: 'Do you want to save the changes?',
+                icon: 'warning',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: `Reset`,
+                denyButtonText: `Don't reset`,
+                }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    fields = ['nameInput', "emailInput", "commentInput"];
+                    for(i = 0; i < 3; i++){
+                        $('#'+fields[i]).val('')
+                    }
+                    changeCounter();
+
+                    Swal.fire('Reset!', '', 'success')
+                } else if (result.isDenied) {
+                    Swal.fire('Fields are not reset!', '', 'error')
+                }
+            })
         });
     </script>
 @endsection

@@ -1,19 +1,46 @@
 @if(count($errors) > 0)
-    @foreach($errors->all() as $error)
-        <div class="alert alert-danger">
-            {{$error}}
-        </div>
-    @endforeach
+    <template id="errors-message-template-swal">
+        <swal-title>
+            OH NO! You have the following @if(count($errors) > 1)errors @else error @endif</span>:
+        </swal-title>
+        <swal-icon type="error"></swal-icon>
+        <swal-html>
+            @foreach($errors->all() as $error)
+                <div>
+                    -{{$error}}
+                </div>
+            @endforeach
+        </swal-html>
+    </template>
+    <script>
+        $( document ).ready(function() {
+            Swal.fire({
+                template: "#errors-message-template-swal"
+            })
+        })
+    </script>
 @endif
 
 @if(session('success'))
-    <div class="alert alert-success">
-        {{session('success')}}
-    </div>
+    <script>
+        $( document ).ready(function() {
+            Swal.fire(
+                'Success!',
+                '{{session("success")}}',
+                'success'
+            )
+        })
+    </script>
 @endif
 
 @if(session('error'))
-    <div class="alert alert-danger">
-        {{session('error')}}
-    </div>
+    <script>
+        $( document ).ready(function() {
+            Swal.fire(
+                'OH NO!',
+                '{{session("error")}}',
+                'error'
+            )
+        })
+    </script>
 @endif
