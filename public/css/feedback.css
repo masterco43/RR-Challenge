@@ -20,3 +20,7 @@
 .Montserrat{
     font-family: Montserrat-Black;
 }
+
+.form-control{
+    background-color: #f9f9f9;
+}

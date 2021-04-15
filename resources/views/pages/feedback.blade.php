@@ -28,15 +28,15 @@
                             <br>
                             <div class="form-group">
                                 <label for="nameInput" style="font-weight: bold;">Name <span class="required" style="">*</span></label>
-                                <input required type="text" class="form-control" id="nameInput" name="name" placeholder="Enter Name" value="{{old('name')}}" minlength="2" maxlength="50">
+                                <input required type="text" class="form-control" id="nameInput" name="name" value="{{old('name')}}" minlength="2" maxlength="50">
                             </div>
                             <div class="form-group">
                                 <label for="emailInput" style="font-weight: bold;">E-mail Address <span class="required" style="">*</span></label>
-                                <input required type="email" class="form-control" id="emailInput" name="email" placeholder="Enter E-mail" value="{{old('email')}}">
+                                <input required type="email" class="form-control" id="emailInput" name="email" value="{{old('email')}}">
                             </div>
                             <div class="form-group">
                                 <label for="commentInput" style="font-weight: bold;">Questions / Comments <span class="required" style="">*</span></label>
-                                <textarea required class="form-control" id="commentInput" name="comments" placeholder="Enter Questions/Comments" rows="4" onkeyup="changeCounter()" minlength="6" maxlength="200" >{{old('comments')}}</textarea>
+                                <textarea required class="form-control" id="commentInput" name="comments" rows="4" onkeyup="changeCounter()" minlength="6" maxlength="200" >{{old('comments')}}</textarea>
                                 <small id="counter" class="form-text text-right" style="color: #6c757d"><span id="count-input">0</span>/200</small>
                             </div>
                             <div class="row">
@@ -55,7 +55,9 @@
         </div>
     </div>
 
+    
     <script>
+    
         function changeCounter(){
             count = $('#commentInput').val().length;
             $('#count-input').html(count);

@@ -21,7 +21,7 @@
         </style>
     </head>
 
-    <body style="background-color:#f1f4fb; width:100%">
+    <body style="background-color:#eff2f5; width:100%">
         <div class="row" style="padding-top: 1.5%; padding-left:3%; width:90%">
             <a href='https://remoterated.com/'  target="_blank"><img src="{{ URL::asset('/images/r-badge.png') }}" alt="rr-logo" height="50px" width="50px" style="filter: grayscale(10); "></a>
         </div>
