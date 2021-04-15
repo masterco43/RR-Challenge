@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'FeedbackController@index');
+Route::get('/', 'FeedbackController@index')->name('home');
+Route::post('/send_feedback', 'FeedbackController@addFeedback')->name('feedback');
