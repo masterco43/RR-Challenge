@@ -20,7 +20,7 @@
                                 id="helpIcon"
                                 >
                         </div>
-                        <form action="{{route('feedback')}}" method="POST" name="feedback_form">
+                        <form action="{{route('feedback')}}" method="POST" name="feedback_form" id="feedback_form">
                             @csrf
                             <div class="row" style="padding-left: 3%;">
                                 <span class="required" style="font-weight: bold;">Work Remotely. Better.</span>
@@ -28,7 +28,7 @@
                             <br>
                             <div class="form-group">
                                 <label for="nameInput" style="font-weight: bold;">Name <span class="required" style="">*</span></label>
-                                <input required type="text" class="form-control" id="nameInput" name="name" placeholder="Enter Name" value="{{old('name')}}">
+                                <input required type="text" class="form-control" id="nameInput" name="name" placeholder="Enter Name" value="{{old('name')}}" minlength="2" maxlength="50">
                             </div>
                             <div class="form-group">
                                 <label for="emailInput" style="font-weight: bold;">E-mail Address <span class="required" style="">*</span></label>
@@ -36,7 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="commentInput" style="font-weight: bold;">Questions / Comments <span class="required" style="">*</span></label>
-                                <textarea required class="form-control" id="commentInput" name="comments" placeholder="Enter Questions/Comments" rows="4" onkeyup="changeCounter()" maxlength="200" >{{old('comments')}}</textarea>
+                                <textarea required class="form-control" id="commentInput" name="comments" placeholder="Enter Questions/Comments" rows="4" onkeyup="changeCounter()" minlength="6" maxlength="200" >{{old('comments')}}</textarea>
                                 <small id="counter" class="form-text text-right" style="color: #6c757d"><span id="count-input">0</span>/200</small>
                             </div>
                             <div class="row">

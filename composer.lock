@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "9e4115423cb098c63e9687dc67759946",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1439,6 +1439,523 @@
                 }
             ],
             "time": "2020-12-14T13:15:25+00:00"
+        },
+        {
+            "name": "mouf/html.htmlelement",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.html_element.git",
+                "reference": "86b7b3f9fc9d9a823a708e3190e5aa9b3ce95a56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.html_element/zipball/86b7b3f9fc9d9a823a708e3190e5aa9b3ce95a56",
+                "reference": "86b7b3f9fc9d9a823a708e3190e5aa9b3ce95a56",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/utils.action.action-interface": "~1.0",
+                "mouf/utils.value.value-interface": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\HtmlElement": "src/",
+                    "Mouf\\Utils\\Action": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the HtmlElementInterface interface that can be used to output HTML on a page. It also features base classes implementing this interface.",
+            "homepage": "https://github.com/thecodingmachine/html.html_element",
+            "keywords": [
+                "html",
+                "interface",
+                "tohtml"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/html.html_element/issues",
+                "source": "https://github.com/thecodingmachine/html.html_element/tree/2.0"
+            },
+            "time": "2018-08-22T21:07:53+00:00"
+        },
+        {
+            "name": "mouf/html.utils.i18nweblibrary",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.utils.i18nweblibrary.git",
+                "reference": "844a9f3be17242d9f6be371095c1a4e9db4542e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.utils.i18nweblibrary/zipball/844a9f3be17242d9f6be371095c1a4e9db4542e1",
+                "reference": "844a9f3be17242d9f6be371095c1a4e9db4542e1",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.utils.weblibrarymanager": ">=2.0-dev,<3.0",
+                "mouf/utils.i18n.fine": ">=3.0-dev,<4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Utils\\I18nWebLibrary": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "TODO.",
+            "homepage": "https://github.com/thecodingmachine/html.utils.i18nweblibrary",
+            "keywords": [
+                "html",
+                "i18n",
+                "utils"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/html.utils.i18nweblibrary/issues",
+                "source": "https://github.com/thecodingmachine/html.utils.i18nweblibrary/tree/2.0"
+            },
+            "time": "2013-10-29T18:21:58+00:00"
+        },
+        {
+            "name": "mouf/html.utils.weblibrarymanager",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/html.utils.weblibrarymanager.git",
+                "reference": "2c5f568795d65cdd022812905bd38208388074c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/html.utils.weblibrarymanager/zipball/2c5f568795d65cdd022812905bd38208388074c4",
+                "reference": "2c5f568795d65cdd022812905bd38208388074c4",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.htmlelement": "~2.0",
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "install.php"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Html\\Utils\\WebLibraryManager": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Javascript/CSS library manager is a PHP class in charge of keeping track of the JS and CSS files that have been included so far in a web page. Basically, you tell the Javascript/CSS library manager to import a JS/CSS file and it will make sure it is included, only once, and that all dependencies are included as well.",
+            "homepage": "https://github.com/thecodingmachine/html.utils.weblibrarymanager",
+            "keywords": [
+                "css",
+                "dependencies",
+                "dependency",
+                "html",
+                "javascript",
+                "mouf"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/html.utils.weblibrarymanager/issues",
+                "source": "https://github.com/thecodingmachine/html.utils.weblibrarymanager/tree/2.0"
+            },
+            "time": "2013-10-29T18:21:58+00:00"
+        },
+        {
+            "name": "mouf/javascript.jquery.jquery",
+            "version": "v1.11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/javascript.jquery.jquery.git",
+                "reference": "7bae0fbeb391540906ec0ef5e40da6263e5133a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/javascript.jquery.jquery/zipball/7bae0fbeb391540906ec0ef5e40da6263e5133a3",
+                "reference": "7bae0fbeb391540906ec0ef5e40da6263e5133a3",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.utils.weblibrarymanager": ">=2.0-dev,<3.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "install.php"
+                        }
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the JQuery library, along a Mouf installer file to add JQuery easily in your Mouf project.",
+            "homepage": "https://github.com/thecodingmachine/javascript.jquery.jquery",
+            "keywords": [
+                "javascript",
+                "jquery",
+                "mouf"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/javascript.jquery.jquery/issues",
+                "source": "https://github.com/thecodingmachine/javascript.jquery.jquery/tree/1.11.0"
+            },
+            "time": "2014-02-18T10:06:30+00:00"
+        },
+        {
+            "name": "mouf/javascript.jquery.jquery-validate",
+            "version": "v1.13.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/javascript.jquery.jquery-validate.git",
+                "reference": "3e1aade439cdc31555085fd7ab06e1b49777ec24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/javascript.jquery.jquery-validate/zipball/3e1aade439cdc31555085fd7ab06e1b49777ec24",
+                "reference": "3e1aade439cdc31555085fd7ab06e1b49777ec24",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/html.utils.i18nweblibrary": ">=2.0.x-dev,<4.0",
+                "mouf/javascript.jquery.jquery": ">=1.7.2-dev,<2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "install.php"
+                        }
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains the JQuery Validator. It allows developers to easily validate forms, using CSS classes.",
+            "homepage": "http://mouf-php.com",
+            "keywords": [
+                "javascript",
+                "jquery",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/javascript.jquery.jquery-validate/issues",
+                "source": "https://github.com/thecodingmachine/javascript.jquery.jquery-validate/tree/1.13.0"
+            },
+            "time": "2015-01-15T15:23:24+00:00"
+        },
+        {
+            "name": "mouf/mouf-installer",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/mouf-installer.git",
+                "reference": "75cd4295a831b32aabea0b2bb6f4925da6b6e198"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/mouf-installer/zipball/75cd4295a831b32aabea0b2bb6f4925da6b6e198",
+                "reference": "75cd4295a831b32aabea0b2bb6f4925da6b6e198",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": [
+                    "Mouf\\Installer\\MoufLibraryInstaller",
+                    "Mouf\\Installer\\MoufFrameworkInstaller"
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Installer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "The Mouf-installer package is a composer in charge of installing any package with the 'mouf-library' type.",
+            "homepage": "http://mouf-php.com",
+            "keywords": [
+                "install",
+                "mouf"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/mouf-installer/issues",
+                "source": "https://github.com/thecodingmachine/mouf-installer/tree/2.0"
+            },
+            "time": "2014-06-03T20:47:09+00:00"
+        },
+        {
+            "name": "mouf/utils.action.action-interface",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.action.action-interface.git",
+                "reference": "93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.action.action-interface/zipball/93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a",
+                "reference": "93caf3ceba6c3fc53ed16f6e8b453778e07c9c7a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Action": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains an interface used by many objects to say they can do stuff. Actually, they can perform one particular action and has been designed for that. The action performed is completely up to the implementer (sending a mail, storing a result in database, displaying something on the screen...) The concept is very simple, and very powerful at the same time.",
+            "homepage": "https://mouf-php.com/mouf/utils.action.action-interface",
+            "keywords": [
+                "action",
+                "actioninterface",
+                "interface",
+                "mouf"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/utils.action.action-interface/issues",
+                "source": "https://github.com/thecodingmachine/utils.action.action-interface/tree/1.0"
+            },
+            "time": "2013-10-29T18:21:59+00:00"
+        },
+        {
+            "name": "mouf/utils.i18n.fine",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.i18n.fine.git",
+                "reference": "69c165497bc5c202892fdc8022591eddbb8e0e3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.i18n.fine/zipball/69c165497bc5c202892fdc8022591eddbb8e0e3b",
+                "reference": "69c165497bc5c202892fdc8022591eddbb8e0e3b",
+                "shasum": ""
+            },
+            "require": {
+                "mouf/mouf-installer": "~2.0",
+                "php": ">=5.3.0"
+            },
+            "type": "mouf-library",
+            "extra": {
+                "mouf": {
+                    "install": [
+                        {
+                            "type": "file",
+                            "file": "src/install.php"
+                        }
+                    ],
+                    "require-admin": [
+                        "src/FineAdmin.php"
+                    ],
+                    "doc": [
+                        {
+                            "title": "Install",
+                            "url": "doc/install.md"
+                        },
+                        {
+                            "title": "Using FINE",
+                            "url": "doc/using_fine.md"
+                        },
+                        {
+                            "title": "Tutorial",
+                            "url": "doc/tutorial.md"
+                        },
+                        {
+                            "title": "Date functions",
+                            "url": "doc/date_functions.md"
+                        },
+                        {
+                            "title": "Currency functions",
+                            "url": "doc/currency_functions.md"
+                        }
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\I18n\\Fine\\": "src/"
+                },
+                "files": [
+                    "src/msgFunctions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                },
+                {
+                    "name": "Marc Teyssier",
+                    "email": "m.teyssier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "Fine is a PHP internationalisation package. It will help you provide applications that support several languages. FINE means: Fine is not english :). Translation is performed using PHP mapping files, but you will have a nice graphical interface in the Mouf framework to write your own translated messages.",
+            "homepage": "https://github.com/thecodingmachine/utils.i18n.fine",
+            "keywords": [
+                "fine",
+                "i18n",
+                "internationalisation",
+                "mouf"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/utils.i18n.fine/issues",
+                "source": "https://github.com/thecodingmachine/utils.i18n.fine/tree/3.0"
+            },
+            "time": "2017-08-04T10:52:04+00:00"
+        },
+        {
+            "name": "mouf/utils.value.value-interface",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/utils.value.value-interface.git",
+                "reference": "3825f2734d2d88b3be1cbd480392cf0170d3170e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/utils.value.value-interface/zipball/3825f2734d2d88b3be1cbd480392cf0170d3170e",
+                "reference": "3825f2734d2d88b3be1cbd480392cf0170d3170e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "mouf": {
+                    "logo": "logo.png"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mouf\\Utils\\Value": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "This package contains an interface used by many objects to say they represent a value that can be computed. The concept is very simple, and very powerful at the same time.",
+            "homepage": "https://mouf-php.com/mouf/utils.value.value-interface",
+            "keywords": [
+                "interface",
+                "mouf",
+                "value"
+            ],
+            "support": {
+                "issues": "https://github.com/thecodingmachine/utils.value.value-interface/issues",
+                "source": "https://github.com/thecodingmachine/utils.value.value-interface/tree/1.0"
+            },
+            "time": "2013-10-29T18:22:00+00:00"
         },
         {
             "name": "nesbot/carbon",
