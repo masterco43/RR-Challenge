@@ -65,6 +65,12 @@
                 $('#counter').css('color','#6c757d');
         }
 
-        
+        $('#resetbutton').click( function (){
+            fields = ['nameInput', "emailInput", "commentInput"];
+            for(i = 0; i < 3; i++){
+                $('#'+fields[i]).val('')
+            }
+            changeCounter();
+        });
     </script>
 @endsection
