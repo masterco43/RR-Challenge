@@ -19,7 +19,10 @@ class FeedbackController extends Controller
             'comments' => ['required', 'min:6', 'max:200'],
         ]);
 
-        
+        //checks if more than two were sent in the past hour
+        $count = Feedback::where('email', $request->email)->where('created_at', '>', date('Y-m-d H:i:s', strtotime('-1 hours')))->count();
+        if($count > 1)
+            return back()->with('error', 'You cannot send more than 2 messages per hour per email!');   
 
         //saves the feedback
         $feedback = new Feedback;
