@@ -67,14 +67,14 @@
 
         $('#resetbutton').click( function (){
             Swal.fire({
-                title: 'Do you want to save the changes?',
+                title: 'Do you want to reset the fields?',
                 icon: 'warning',
                 showDenyButton: true,
                 showCancelButton: false,
                 confirmButtonText: `Reset`,
                 denyButtonText: `Don't reset`,
                 }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
+
                 if (result.isConfirmed) {
                     fields = ['nameInput', "emailInput", "commentInput"];
                     for(i = 0; i < 3; i++){
