@@ -26,7 +26,8 @@
             <img src="{{ URL::asset('/images/r-badge.png') }}" alt="rr-logo" height="50px" width="50px" style="filter: grayscale(10); ">
         </div>
         <br>
-        <div class="row">
+        <div class="container">
+            @include('layouts.messages')
             @yield('content')
         </div>
 
