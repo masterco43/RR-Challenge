@@ -1,0 +1,22 @@
+.borderless{
+    border-color:transparent;  
+    width:75%;
+}
+
+.required{
+    color: #ea5d24;
+}
+
+.greyout{
+    opacity: 0.4; 
+    filter: alpha(opacity=40);
+}
+
+@font-face{
+    font-family: Montserrat-Black;
+    src: url('/fonts/Montserrat-Black.tff');
+}
+
+.Montserrat{
+    font-family: Montserrat-Black;
+}
